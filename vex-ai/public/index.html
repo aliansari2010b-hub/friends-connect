@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131b">
+  <title>VEX AI</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">V</div>
+        <div>
+          <h1>VEX AI</h1>
+          <p>Your local AI assistant</p>
+        </div>
+      </div>
+      <div id="status" class="status">Checking Ollama…</div>
+    </header>
+
+    <section class="welcome" id="welcome">
+      <p class="eyebrow">PRIVATE • LOCAL • YOURS</p>
+      <h2>What can I help you with?</h2>
+      <p>Chat with your local AI model running on your computer.</p>
+    </section>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <form id="chat-form" class="composer">
+      <label class="sr-only" for="message">Your message</label>
+      <textarea id="message" name="message" rows="1"
+        placeholder="Message VEX AI…" maxlength="12000" required></textarea>
+      <button id="send" type="submit">Send ↑</button>
+    </form>
+
+    <p class="footnote">VEX AI Phase 1 · Powered by Ollama</p>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
