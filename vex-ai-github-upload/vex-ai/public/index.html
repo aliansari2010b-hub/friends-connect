@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VEX AI</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand-mark">V</div>
+      <div><h1>VEX AI</h1><p>Local assistant · powered by Ollama</p></div>
+      <span id="status" class="status">Checking Ollama…</span>
+    </header>
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="message assistant"><strong>VEX</strong><p>Hi! I'm ready when Ollama is running. Send a message to begin.</p></div>
+    </section>
+    <form id="chat-form" class="composer">
+      <label class="sr-only" for="message">Your message</label>
+      <textarea id="message" rows="2" maxlength="8000" placeholder="Ask VEX something…" required></textarea>
+      <button id="send" type="submit">Send</button>
+    </form>
+    <p class="footnote">Your prompts are sent to your local Ollama service. This Phase 1 app does not perform PC automation.</p>
+  </main>
+</body>
+</html>
